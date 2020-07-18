@@ -25,11 +25,13 @@ Step 4 – Classifier will categorize whether eyes are open or closed.
 Step 5 – Calculate score to check whether the person is drowsy.
 
 The Dataset
+
 The dataset used for this model is created by us. To create the dataset, we wrote a script that captures eyes from a camera and stores in our local disk. We separated them into their respective labels ‘Open’ or ‘Closed’. The data was manually cleaned by removing the unwanted images which were not necessary for building the model. The data comprises around 7000 images of people’s eyes under different lighting conditions. After training the model on our dataset, we have attached the final weights and model architecture file “models/cnnCat2.h5”.
 
 Now, you can use this model to classify if a person’s eye is open or closed.
 
 The Model Architecture
+
 The model we used is built with Keras using Convolutional Neural Networks (CNN). A convolutional neural network is a special type of deep neural network which performs extremely well for image classification purposes. A CNN basically consists of an input layer, an output layer and a hidden layer which can have multiple numbers of layers. A convolution operation is performed on these layers using a filter that performs 2D matrix multiplication on the layer and filter.
 
 The CNN model architecture consists of the following layers:
